@@ -7,5 +7,3 @@ else
   echo "[ INFO ] Starting keep-alive script..."
   bash keep_alive.sh &
 fi
-cd rclone-v1.58.1-linux-amd64 && chmod -R 777 * && mv rclone ~
-
