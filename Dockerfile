@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 WORKDIR /app
 
-RUN apt update && apt install -y curl wget unzip qbittorrent-nox
+RUN apt update && apt install -y curl wget unzip qbittorrent-nox nano htop
 
 ENV VERSION=1.26.1
 ENV ARCH=amd64
