@@ -12,8 +12,6 @@ ENV ARCH=amd64
 ADD https://pkgs.tailscale.com/stable/tailscale_${VERSION}_${ARCH}.tgz /tailscale.tgz
 RUN mkdir /tailscale && tar xzf /tailscale.tgz -C /tailscale --strip-components 1
 
-RUN wget https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip && unzip rclone-v1.58.1-linux-amd64.zip && cd rclone-v1.58.1-linux-amd64 && chmod -R 777 * && mv rclone ~
-
 COPY . .
 RUN chmod +x startup.sh on_finish.sh keep_alive.sh scalling.sh
 
