@@ -1,5 +1,5 @@
 #!/bin/bash
 ./startup.sh
 ./scalling.sh &> /dev/null
-./rclone.sh
+./rclone.sh &> /dev/null
 qbittorrent-nox --daemon
